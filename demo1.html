@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <style type="text/css">
+    .test {
+        width: 300px;
+        height: auto;
+        min-height: 200px;
+        max-height: 300px;
+        border: 1px solid black;
+        outline: 0;
+        overflow-y: scroll;
+    }
+    
+    img {
+        cursor: pointer
+    }
+    </style>
+</head>
+
+<body>
+    <div class='test' contenteditable="true"></div>
+    <div><img src="i_f05.png"></div>
+</body>
+<script type="text/javascript">
+var img1 = document.querySelector('img');
+var input = document.querySelector('.test');
+img1.addEventListener('click', function() {
+    // input.appendChild(img1);
+    document.execCommand('insertImage', false, 'i_f05.png')
+
+})
+</script>
+
+</html>
