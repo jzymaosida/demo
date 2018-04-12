@@ -29,9 +29,8 @@
 var img1 = document.querySelector('img');
 var input = document.querySelector('.test');
 img1.addEventListener('click', function() {
-    // input.appendChild(img1);
     document.execCommand('insertImage', false, 'i_f05.png')
-
+    //可以看到 第一个参数为命令的名词，第二个参数是 是否展示用户界面一般为false，第三个参数就是额外命令，这里是图片就是需要url，默认为null
 })
 </script>
 
